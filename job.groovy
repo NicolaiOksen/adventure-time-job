@@ -1,4 +1,4 @@
-job('build') {
+job('AdventureTime.Build') {
     description 'Build and test the app.'
     scm {
         git{
