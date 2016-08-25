@@ -21,7 +21,7 @@ job('AdventureTime.Build') {
         pretestedIntegration()
     }
     triggers {
-        githubPush()
+        useGitHubHooks()
     }
     steps {
         shell('./test.sh')
