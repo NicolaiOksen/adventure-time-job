@@ -3,7 +3,8 @@ job('build') {
     scm {
         git{
             remote {
-               github 'NicolaiOksen/Adventure-Time' 
+               github 'NicolaiOksen/Adventure-Time'
+               branch 'origin/ready/**'
                credentials("2f0ddb6f-f67f-4c0b-9a17-09455139185c")
             }
             extensions {
@@ -23,6 +24,6 @@ job('build') {
         githubPush()
     }
     steps {
-        gradle 'test'
+        shell('./test.sh')
     }
 }
