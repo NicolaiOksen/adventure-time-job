@@ -3,8 +3,8 @@ job('AdventureTime.Build') {
     scm {
         git{
             remote {
-               github 'NicolaiOksen/Adventure-Time'
-               branch 'origin/ready/**'
+               github 'NicolaiOksen/adventure-time'
+               branch 'ready/**'
                credentials("2f0ddb6f-f67f-4c0b-9a17-09455139185c")
             }
             extensions {
