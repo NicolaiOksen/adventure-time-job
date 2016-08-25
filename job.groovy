@@ -5,6 +5,7 @@ job('AdventureTime.Build') {
             remote {
                github 'NicolaiOksen/adventure-time'
                branch 'ready/**'
+               name 'origin'
                credentials("2f0ddb6f-f67f-4c0b-9a17-09455139185c")
             }
             extensions {
