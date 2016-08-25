@@ -6,7 +6,12 @@ job('build') {
                github 'NicolaiOksen/Adventure-Time' 
                credentials("2f0ddb6f-f67f-4c0b-9a17-09455139185c")
             }
+            extensions {
+                wipeOutWorkspace()
+                pruneBranches()
+            }
         }
+        
     }
     wrappers {
         pretestedIntegration("SQUASHED", "master", "origin")
